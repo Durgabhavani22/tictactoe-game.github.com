@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
- class TicTacToe {
+ class play {
     int boardWidth = 600;
     int boardHeight = 650; //50px for the text panel on top
 
@@ -19,7 +19,7 @@ import javax.swing.*;
     boolean gameOver = false;
     int turns = 0;
 
-    TicTacToe() {
+    play() {
         frame.setVisible(true);
         frame.setSize(boardWidth, boardHeight);
         frame.setLocationRelativeTo(null);
@@ -147,8 +147,8 @@ import javax.swing.*;
         textLabel.setText("Tie!");
     }
 }
-public class Play {
+public class TicTacToe {
     public static void main(String[] args) throws Exception {
-        TicTacToe ticTacToe = new TicTacToe();
+        play game = new play();
     }
 }
